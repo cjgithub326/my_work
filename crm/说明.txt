@@ -1,0 +1,22 @@
+
+客户关系管理系统架构搭建
+
+实现技术：
+Spring4+SpringMvc4+Mybatis3+quartz+highcharts3
+
+
+搭建步骤：
+  1、建web项目
+  2、引入依赖的jar包
+  3、配置整合文件
+     1）web.xml配置（配置spring支持、配置SpringMVC支持）
+	 2）spring配置 （配置applicationContext.xml、配置加载mybatis文件）
+	 3）springMVC配置
+	 4）mybatis配置
+  
+  4、建立包和相关类（controller、service、dao、entity）
+  5、创建数据库及表
+  6、部署web项目测试，没有报错则加载成功。
+	
+	 
+	 
