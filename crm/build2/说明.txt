@@ -1,0 +1,21 @@
+
+客户关系管理系统
+
+定制功能：
+
+1、系统主页搭建
+  
+实现思路：
+ 
+  使用easyUI前端框架基础布局（上北下南左西右东布局），body中每个部分div布局。可参考官网api的demo。
+ 
+  具体引用引入easyUI框架（相关js和css）如下：
+  
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/jquery-easyui-1.3.3/demo/demo.css">
+  <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.min.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.easyui.min.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js"></script>
+	 
+	 
