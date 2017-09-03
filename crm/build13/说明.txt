@@ -1,0 +1,22 @@
+
+客户关系管理系统
+
+定制功能：
+
+1、客户开发计划“查看详细信息”功能实现
+2、客户信息条件分页查询功能实现
+
+  
+实现思路：
+ 
+   后台提供查询客户信息接口及获取总记录数接口，前台使用easyUI框架，ajax请求后台,返回json字符串。
+	
+   注意：jsp页面用到if...else逻辑判断，引入jstl的c标签
+       <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	   
+	   easyUI table标签中 data-options="frozen:true"   属性非常有用
+       当某些表格字段过长，显示不全，可以使用该属性，固定某些必须显示的字段，其他的字段可拖动。 
+  
+ 
+	 
+	 
