@@ -1,0 +1,24 @@
+
+客户关系管理系统
+
+定制功能：
+
+1、 每天定时检查客户流失情况
+
+
+实现思路：
+      
+	   使用定时器定时检测把查询到的流失客户（六个月未下单的客户）添加到流失客户表中。需增加添加流失客户接口，查询流失客户的接口。
+	
+      1）定时任务quartz的配置
+	     
+	  2）从订单表中查询出六个月内下单的客户(正常客户)，那么其他客户则是六个月未下单的客户。(流失客户为1)
+	  
+	   select * from t_customer t1  where t1.id not in (select cusId from t_customer_order where DATE_ADD(orderDate,INTERVAL 6 MONTH)>NOW()) and state=0
+	   
+	  3） 查找指定客户最近订单，根据id查询按日期降序排序取第一条。
+        SELECT * FROM t_customer_order WHERE cusId=#{cusId} ORDER BY orderdate DESC LIMIT 0,1;
+  
+ 
+	 
+	 
