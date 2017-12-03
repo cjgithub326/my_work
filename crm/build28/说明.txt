@@ -1,0 +1,27 @@
+
+客户关系管理系统
+
+定制功能：
+
+1、客户贡献分析
+
+
+实现思路：
+      
+	    写个dto封装客户及客户总金额，获取每个客户总金额。后台提供查询客户总金额接口和总记录数接口，前台ajax请求，返回json。
+	
+      
+   重点：
+      数据库查询左连接及分组查询使用。
+
+	查询客户订单总金额（牵涉到多表关联查询
+	这里牵涉到个表，t_customer （客户表），t_customer_order（客户订单表），t_order_details（客户订单详情表），需用到左连接查询和分组查询
+	select? t1.name,SUM(t3.sum) as gx? from t_customer? t1 left join t_customer_order t2 on t1.id = t2.cusId left join t_order_details t3 on t2.id= t3.orderId group by t1.id
+	
+	思路：
+	1、先左连接查询出所有关联记录
+	2、再根据字段分组查询所有记录
+	3、最后查询只关心的字段记录
+ 
+	 
+	 
