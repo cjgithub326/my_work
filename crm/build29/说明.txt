@@ -1,0 +1,22 @@
+
+客户关系管理系统
+
+定制功能：
+
+1、客户构成分析
+
+
+实现思路：
+      
+	    写个dto封装客户等级及客户数量。后台提供查询客户构成接口，前台ajax请求，返回json。
+	
+      
+   重点：
+      引用到了highcharts图标库
+  前端js需引入
+     
+	  <script src="${pageContext.request.contextPath}/highcharts4/jquery-1.8.3.min.js" type="text/javascript"></script>
+      <script src="${pageContext.request.contextPath}/highcharts4/js/highcharts.js" type="text/javascript"></script> 
+ 
+	 
+	 
